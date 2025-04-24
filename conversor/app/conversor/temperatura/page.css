@@ -1,0 +1,59 @@
+.conversor-temperatura-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  }
+  
+  .conversor-temperatura-titulo {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+  
+  .conversor-temperatura-input {
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .conversor-temperatura-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .conversor-temperatura-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .conversor-temperatura-container {
+      padding: 30px 20px;
+    }
+    
+    .conversor-temperatura-titulo {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+    }
+    
+    .conversor-temperatura-input {
+      padding: 12px 15px;
+    }
+  }

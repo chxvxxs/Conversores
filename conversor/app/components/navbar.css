@@ -1,0 +1,47 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    padding: 1.5rem 0;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  .nav-link {
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0.5rem 0;
+    position: relative;
+  }
+  
+  /* Sublinhado animado */
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background: #ffed4a; /* Amarelo do seu tema */
+    transition: width 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #ffed4a;
+  }
+  
+  .nav-link:hover::after {
+    width: 100%;
+  }
